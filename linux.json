@@ -633,12 +633,13 @@
     },
     "inbounds": [
         {
-            "tag": "home",
             "type": "shadowsocks",
-            "server": "95279527.v6.rocks",
-            "server_port": 7788,
+            "tag": "home-in",
+            "listen": "::",
+            "listen_port": 7788,
             "method": "aes-128-gcm",
-            "password": "wocaonima"
+            "password": "112233",
+            "network": "tcp,udp"
         },
         {
             "tag": "dns-in",
