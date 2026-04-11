@@ -362,17 +362,18 @@
             ]
         },
         {
-            "tag": "🎯 全球直连",
-            "type": "direct"
-        },
-        {
             "type": "shadowsocks",
             "tag": "home",
             "server": " 95279527.v6.rocks",
             "server_port": 7788,
             "password": "112233",
             "method": "aes-128-gcm"
+        },
+        {
+            "tag": "🎯 全球直连",
+            "type": "direct"
         }
+
     ],
     "route": {
         "rules": [
