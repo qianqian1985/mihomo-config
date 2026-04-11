@@ -21,11 +21,14 @@
             {
                 "tag": "fakeip",
                 "type": "fakeip",
-                "inet4_range": "198.18.0.0/15",
-                "inet6_range": "fc00::/18"
+                "inet4_range": "198.18.0.0/15"
             }
         ],
         "rules": [
+            {
+                "query_type": "AAAA",
+                "action": "reject"
+            },
             {
                 "clash_mode": "direct",
                 "server": "local"
@@ -44,8 +47,7 @@
             },
             {
                 "query_type": [
-                    "A",
-                    "AAAA"
+                    "A"
                 ],
                 "server": "fakeip",
                 "rewrite_ttl": 1
@@ -632,13 +634,6 @@
         }
     },
     "inbounds": [
-        {   "tag": "home",
-            "type": "shadowsocks",
-            "listen": "::",
-            "listen_port": 7788,
-            "method": "aes-128-gcm",
-            "password": "112233",
-        },
         {
             "tag": "dns-in",
             "type": "direct",
