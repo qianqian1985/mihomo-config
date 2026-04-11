@@ -639,7 +639,7 @@
             "listen_port": 7788,
             "method": "aes-128-gcm",
             "password": "112233",
-            "network": "tcp,udp"
+            "network": ["tcp", "udp"]
         },
         {
             "tag": "dns-in",
