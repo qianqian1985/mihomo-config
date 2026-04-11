@@ -44,7 +44,14 @@
     {"tag": "🍃 延迟辅助", "type": "urltest", "outbounds": ["🚀 默认代理", "🎯 全球直连"]},
     {"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "🧠 AI", "📹 YouTube", "🍀 Google", "👨‍💻 Github", "📲 Telegram", "🎵 TikTok", "🎥 Netflix", "💶 PayPal", "🎮 Steam", "🪟 Microsoft", "🐬 OneDrive", "🍏 Apple", "🐠 漏网之鱼", "🇭🇰 香港手动", "🇯🇵 日本手动", "🇸🇬 狮城手动", "🇺🇲 美国手动", "🐸 手动选择", "♻️ 自动选择", "🍃 延迟辅助", "🎯 全球直连"]},
     {"tag": "🎯 全球直连", "type": "direct"},
-	{"tag": "home","type": "shadowsocks", "server": "95279527.v6.rocks", "server_port": 7788, "password": "112233", "method": "aes-128-gcm"}
+	{
+    "type": "shadowsocks",
+    "tag": "home",
+    "server": " 95279527.v6.rocks",
+    "server_port": 7788,
+    "password": "112233",
+    "method": "aes-128-gcm"
+    }
 	],
   "route": {
     "rules": [
