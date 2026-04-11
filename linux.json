@@ -632,9 +632,8 @@
         }
     },
     "inbounds": [
-        {
+        {   "tag": "home",
             "type": "shadowsocks",
-            "tag": "home",
             "listen": "::",
             "listen_port": 7788,
             "method": "aes-128-gcm",
