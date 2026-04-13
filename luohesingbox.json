@@ -483,7 +483,7 @@
                 "type": "remote",
                 "format": "source",
                 "url": "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter.json",
-                "download_detour":  "♻️ 自动选择"
+                "download_detour": "♻️ 自动选择"
             },
             {
                 "tag": "geosite-ai",
@@ -657,10 +657,14 @@
             "listen_port": 7890
         },
         {
-            "tag": "tproxy-in",
             "type": "tproxy",
+            "tag": "tproxy-in",
             "listen": "::",
-            "listen_port": 7893
+            "listen_port": 7893,
+            "tcp_fast_open": true,
+            "udp_fragment": true,
+            "sniff_override_destination": true,
+            "sniff": true
         },
         {
             "tag": "tun-in",
