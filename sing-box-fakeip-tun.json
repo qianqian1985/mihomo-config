@@ -84,11 +84,7 @@
             "outbounds": [
                 "🇯🇵 日本手动",
                 "🇸🇬 狮城手动",
-                "🇺🇲 美国手动",
-                "🇭🇰 香港自动",
-                "🇯🇵 日本自动",
-                "🇸🇬 狮城自动",
-                "♻️ 自动选择"
+                "🇺🇲 美国手动"
             ]
         },
         {
@@ -99,21 +95,13 @@
                 "🇯🇵 日本手动",
                 "🇸🇬 狮城手动",
                 "🇺🇲 美国手动",
-                "🐸 手动选择",
-                "🇭🇰 香港自动",
-                "🇯🇵 日本自动",
-                "🇸🇬 狮城自动",
-                "♻️ 自动选择"
+                "🐸 手动选择"
             ]
         },
         {
             "tag": "🍀 Google",
             "type": "selector",
             "outbounds": [
-                "🇭🇰 香港自动",
-                "🇯🇵 日本自动",
-                "🇸🇬 狮城自动",
-                "♻️ 自动选择",
                 "🇭🇰 香港手动",
                 "🇯🇵 日本手动",
                 "🇸🇬 狮城手动",
@@ -125,10 +113,6 @@
             "tag": "👨‍💻 Github",
             "type": "selector",
             "outbounds": [
-                "🇭🇰 香港自动",
-                "🇯🇵 日本自动",
-                "🇸🇬 狮城自动",
-                "♻️ 自动选择",
                 "🇯🇵 日本手动",
                 "🇭🇰 香港手动",
                 "🇸🇬 狮城手动",
@@ -140,10 +124,6 @@
             "tag": "📲 Telegram",
             "type": "selector",
             "outbounds": [
-                "🇭🇰 香港自动",
-                "🇯🇵 日本自动",
-                "🇸🇬 狮城自动",
-                "♻️ 自动选择",
                 "🇸🇬 狮城手动",
                 "🇭🇰 香港手动",
                 "🇯🇵 日本手动",
@@ -795,19 +775,20 @@
         {
             "tag": "tun-in",
             "type": "tun",
+			"stack": "system",
             "interface_name": "momo",
             "address": [
                 "172.31.0.1/30",
                 "fdfe:dcba:9876::1/126"
             ],
-            "auto_route": false,
-            "auto_redirect": false
+            "auto_route": true,
+            "auto_redirect": true
         },
         {
             "type": "shadowsocks",
             "tag": "home",
-            "server": "ddns.com",
-            "server_port": 7788,
+            "listen": "::",
+            "listen_port": 7788,
             "password": "112233",
             "method": "aes-128-gcm"
         }
